@@ -16,7 +16,6 @@ import { DataTablesModule } from "angular-datatables";
 
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
-import { InicioComponent } from './portal/inicio/inicio.component';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -28,7 +27,7 @@ function appInitializer(authService: AuthService) {
 }
 
 @NgModule({
-  declarations: [AppComponent,  InicioComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
