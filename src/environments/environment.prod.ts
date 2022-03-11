@@ -4,6 +4,7 @@
 
 export const environment = {
   production: true,
+  configFile: 'assets/config/config.json',
   appVersion: 'v8.0.35',
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,

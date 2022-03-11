@@ -16,6 +16,9 @@ import { DataTablesModule } from "angular-datatables";
 
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { initializer } from './init/app-init';
+import { AuthGuard } from './guard/auth.guard';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -46,14 +49,17 @@ function appInitializer(authService: AuthService) {
     AppRoutingModule,
     InlineSVGModule.forRoot(),
     NgbModule,
+    //KeycloakAngularModule
   ],
   providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: appInitializer,
-      multi: true,
-      deps: [AuthService],
-    },
+    /*{ 
+      provide: APP_INITIALIZER, 
+      useFactory: initializer, 
+      deps: [ KeycloakService ], 
+      multi: true
+    }, 
+    AuthGuard,
+    AuthService*/
   ],
   bootstrap: [AppComponent],
 })
