@@ -4,6 +4,11 @@ import { InicioComponent } from './inicio/inicio.component';
 const Routing: Routes = [
   { path: 'inicio', component: InicioComponent },
   {
+    path: 'normativa',
+    loadChildren: () =>
+      import('./normativa/normativa.module').then((m) => m.NormativaModule),
+  },
+  {
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
