@@ -14,16 +14,38 @@
 </div>
 
 <!-- Actividades -->
-<div class="menu-item">
-  <a
-    class="menu-link without-sub"
-    routerLink="/admin/actividades"
-    routerLinkActive="active"
-    ><span class="menu-icon">
-      <span
-        [inlineSVG]="'./assets/media/icons/duotune/general/gen019.svg'"
+<div
+  class="menu-item menu-accordion"
+  data-kt-menu-trigger="click"
+  routerLinkActive="here show"
+>
+  <span class="menu-link"
+    ><span class="menu-icon"
+      ><span
         class="svg-icon svg-icon-2"
-      ></span> </span
-    ><span class="menu-title">Actividades</span></a
-  >
+        [inlineSVG]="'./assets/media/icons/duotune/communication/com006.svg'"
+      ></span></span
+    ><span class="menu-title" data-link="/admin/actividad">Actividades</span
+    ><span class="menu-arrow"></span
+  ></span>
+  <div class="menu-sub menu-sub-accordion" routerLinkActive="menu-active-bg">
+    <div class="menu-item">
+      <a
+        class="menu-link without-sub"
+        routerLinkActive="active"
+        routerLink="/admin/actividad/nueva"
+        ><span class="menu-bullet"><span class="bullet bullet-dot"></span></span
+        ><span class="menu-title">Nueva Actividad</span></a
+      >
+    </div>
+    <div class="menu-item">
+      <a
+        class="menu-link without-sub"
+        routerLinkActive="active"
+        routerLink="/admin/actividad/listado"
+        ><span class="menu-bullet"><span class="bullet bullet-dot"></span></span
+        ><span class="menu-title">Listado</span></a
+      >
+    </div>
+  </div>
 </div>

@@ -12,6 +12,26 @@
     background-color: #027762 !important;
 }
 
+.aside-dark .menu .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here), .aside-dark .menu .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) {
+    background-color: #027762 !important;
+}
+
+.aside-dark .menu .menu-item.show > .menu-link {
+    background-color: #027762 !important;
+}
+
+.aside-dark .menu .menu-item .menu-link.active {
+    background-color: #027762;
+}
+
+.menu-state-title-primary .menu-item .menu-link.active .menu-title {
+    color: #ebc71d !important;
+}
+
+.menu-state-bg .menu-item .menu-link.active {
+     background-color: rgb(245 248 250 / 0%) !important;
+}
+
 .drawer.drawer-on {
     background-color: #027762;
 }
