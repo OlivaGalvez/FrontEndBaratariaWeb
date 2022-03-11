@@ -5,12 +5,12 @@ export function initializer(keycloak: KeycloakService): () => Promise<any> {
     const options: KeycloakOptions = {
         config: environment.keycloackConfig,
         initOptions: {
-            onLoad: 'login-required',
+           // onLoad: 'login-required',
             checkLoginIframe: false
         },
         enableBearerInterceptor: true,
         bearerPrefix: 'Bearer',
-        bearerExcludedUrls: []
+        bearerExcludedUrls: [' ', '/assets', '/error' ]
     };
     return (): Promise<any> => keycloak.init(options);
 }

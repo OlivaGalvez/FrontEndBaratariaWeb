@@ -22,9 +22,9 @@ import { TranslateModule } from '@ngx-translate/core';
     TranslateModule.forRoot(),
     CommonModule,
     GestionRoutingModule,
-    KeycloakAngularModule
+   // KeycloakAngularModule
   ],
-  providers: [
+ /* providers: [
     { 
       provide: APP_INITIALIZER, 
       useFactory: initializer, 
@@ -33,6 +33,6 @@ import { TranslateModule } from '@ngx-translate/core';
     }, 
     AuthGuard,
     AuthService
-  ],
+  ],*/
 })
 export class GestionModule { }

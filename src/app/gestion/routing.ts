@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
-import { AuthGuard } from '../guard/auth.guard';
 import { InicioComponent } from './inicio/inicio.component';
 
 const Routing: Routes = [
 
-  { path: '', canActivate: [AuthGuard], component: InicioComponent },
+  { path: '', component: InicioComponent },
   {
     path: 'crafted/pages/profile',
     loadChildren: () =>

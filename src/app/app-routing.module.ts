@@ -20,6 +20,7 @@ export const routes: Routes = [
   },
   {
     path: 'gestion',
+    canActivate: [AuthGuard],
     loadChildren: () =>
       import('./_metronic_gestion/layout/layout.module').then((m) => m.LayoutModule),
   },
