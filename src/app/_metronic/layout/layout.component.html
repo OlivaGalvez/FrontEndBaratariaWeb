@@ -17,13 +17,13 @@
       <app-header
         id="kt_header"
         [ngClass]="headerCSSClasses"
-        class="header align-items-stretch"
+        class="header align-items-stretch bg-barataria"
         #ktHeader
       ></app-header>
       <div id="kt_content" class="content d-flex flex-column flex-column-fluid">
-        <ng-container *ngIf="toolbarDisplay">
+        <!--ng-container *ngIf="toolbarDisplay">
           <app-toolbar class="toolbar" id="kt_toolbar"></app-toolbar>
-        </ng-container>
+        </ng-container-->
 
         <div class="post d-flex flex-column-fluid" id="kt_post">
           <app-content
@@ -33,7 +33,7 @@
         </div>
       </div>
       <app-footer
-        class="footer py-4 d-flex flex-lg-column"
+        class="footer py-4 d-flex flex-lg-column bg-barataria"
         id="kt_footer"
       ></app-footer>
     </div>
@@ -42,7 +42,7 @@
 
 <app-scripts-init></app-scripts-init>
 <!-- Scroll parte de abajo -->
-<app-scroll-top></app-scroll-top>
+<!--app-scroll-top></app-scroll-top-->
 
 <!-- begin:: Drawers -->
 <app-activity-drawer></app-activity-drawer>
@@ -50,7 +50,7 @@
 <!-- end:: Drawers -->
 
 <!-- end:: Engage -->
-<app-engages></app-engages>
+<!--app-engages></app-engages-->
 <!-- end:: Engage -->
 
 <!-- begin:: Modals -->

@@ -3,3 +3,15 @@
 
 // Replace above style with this SCSS file to enable dark mode styles
 //@import "./assets/sass/style.dark";
+
+.menu-title-gray-700 .menu-item .menu-link .menu-title {
+    color: #ffffff !important;
+}
+
+.drawer.drawer-on {
+    background-color: #027762;
+}
+
+.bg-barataria {
+    background-color: #027762 !important;
+}
