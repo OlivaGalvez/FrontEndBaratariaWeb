@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { LayoutService } from './core/layout.service';
 import { LayoutInitService } from './core/layout-init.service';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -45,15 +46,29 @@ export class LayoutComponent implements OnInit, AfterViewInit {
 
   constructor(
     private initService: LayoutInitService,
-    private layout: LayoutService
+    private layout: LayoutService,
+    private router: Router
   ) {
     this.initService.init();
+    router.events.subscribe((val) => {
+      if (this.router.url.includes("/normativa")) {
+        this.toolbarDisplay = false;
+      }
+      else {
+        this.toolbarDisplay = true;
+      }
+    });
   }
 
   ngOnInit(): void {
+
     // build view by layout config settings
     this.asideDisplay = this.layout.getProp('aside.display') as boolean;
-    this.toolbarDisplay = this.layout.getProp('toolbar.display') as boolean;
+    if (!this.router.url.includes("/normativa"))
+    {
+      this.toolbarDisplay = true;
+    }
+    //this.toolbarDisplay = this.layout.getProp('toolbar.display') as boolean;
     this.contentContainerClasses = this.layout.getStringCSSClasses('contentContainer');
     this.asideCSSClasses = this.layout.getStringCSSClasses('aside');
     this.headerCSSClasses = this.layout.getStringCSSClasses('header');
@@ -70,4 +85,6 @@ export class LayoutComponent implements OnInit, AfterViewInit {
       }
     }
   }
+
+
 }
