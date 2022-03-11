@@ -8,7 +8,7 @@ import { ChartsComponent } from './charts/charts.component';
 import { MixedComponent } from './mixed/mixed.component';
 import { TablesComponent } from './tables/tables.component';
 import { FeedsComponent } from './feeds/feeds.component';
-import { WidgetsModule } from '../../_metronic/partials';
+import { WidgetsModule } from '../../_metronic_portal/partials';
 
 @NgModule({
   declarations: [

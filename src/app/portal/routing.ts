@@ -8,7 +8,7 @@ const Routing: Routes = [
     loadChildren: () =>
       import('./normativa/normativa.module').then((m) => m.NormativaModule),
   },
-  {
+  /* {
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
@@ -17,7 +17,7 @@ const Routing: Routes = [
     path: 'builder',
     loadChildren: () =>
       import('./builder/builder.module').then((m) => m.BuilderModule),
-  },
+  }, */
   {
     path: 'crafted/pages/profile',
     loadChildren: () =>

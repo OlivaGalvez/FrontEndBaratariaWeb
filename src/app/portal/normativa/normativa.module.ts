@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { WidgetsModule } from '../../_metronic/partials';
+import { WidgetsModule } from '../../_metronic_portal/partials';
 import { AvisoLegalComponent } from './aviso-legal/aviso-legal.component';
 import { CondicionesUsoComponent } from './condiciones-uso/condiciones-uso.component';
 import { PoliticaPrivacidadComponent } from './politica-privacidad/politica-privacidad.component';
