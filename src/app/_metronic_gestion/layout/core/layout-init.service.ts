@@ -171,7 +171,7 @@ export class LayoutInitService {
   }
 
   private initAside() {
-    const display = this.layout.getProp('aside.display') as boolean;
+    const display = this.layout.getProp('aside.fixed') as boolean;
     if (!display) {
       return;
     }

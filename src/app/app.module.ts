@@ -49,17 +49,17 @@ function appInitializer(authService: AuthService) {
     AppRoutingModule,
     InlineSVGModule.forRoot(),
     NgbModule,
-    KeycloakAngularModule
+   // KeycloakAngularModule
   ],
   providers: [
-    { 
+    /*{ 
       provide: APP_INITIALIZER, 
       useFactory: initializer, 
       deps: [ KeycloakService ], 
       multi: true
     }, 
     AuthGuard,
-    AuthService
+    AuthService*/
   ],
   bootstrap: [AppComponent],
 })

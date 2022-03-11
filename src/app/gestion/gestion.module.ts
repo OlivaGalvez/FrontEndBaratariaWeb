@@ -21,18 +21,7 @@ import { TranslateModule } from '@ngx-translate/core';
     HttpClientModule,
     TranslateModule.forRoot(),
     CommonModule,
-    GestionRoutingModule,
-   // KeycloakAngularModule
+    GestionRoutingModule
   ],
- /* providers: [
-    { 
-      provide: APP_INITIALIZER, 
-      useFactory: initializer, 
-      deps: [ KeycloakService ], 
-      multi: true
-    }, 
-    AuthGuard,
-    AuthService
-  ],*/
 })
 export class GestionModule { }
